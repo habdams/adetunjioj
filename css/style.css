@@ -138,7 +138,7 @@ h3{
   box-shadow: rgba(30, 170, 200, 0.2) 0px 2px;
 }
 .summaryText>h2{
-  font-size: 5rem;
+  font-size: 4rem;
   margin: -120px 0px 0px -45px;
   color: rgba(30, 170, 200, 0.3);
 }
@@ -202,6 +202,11 @@ h3{
   display: none;
 }
 
+.alert-plug{
+    color: orange;
+    font-style: italic;
+    font-size: 1.0rem;
+}
 
 .contact{
   text-align: center;
@@ -221,7 +226,7 @@ footer {
     margin-left: 0px;
   }
   .summaryText>h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: -67px 0px 0px -45px;
   }
   .summaryText>p{
@@ -288,12 +293,12 @@ font-size: 1rem;
     display: none;
   }
   h1{
-    font-size:1.5rem;
+    font-size:1rem;
     padding-left: 50px;
   }
   .summaryText>h2{
-    font-size: 3.5rem;
-    margin: -60px 0px 0px 40px; 
+    font-size: 2rem;
+    margin: -44px 0px 0px 40px; 
   }
   .summaryText>p{
     font-size: 1.5rem;
