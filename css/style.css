@@ -5,272 +5,261 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 16px;
 }
-p{
-  font-family: 'Quicksand', sans-serif;
+p {
+  font-family: "Quicksand", sans-serif;
 }
-h1,h2,h3,h4{
-  font-family:'Corben',sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Corben", sans-serif;
 }
-li{
+li {
   display: inline;
   margin-right: 40px;
 }
 
-a{
+a {
   text-decoration: none;
-  color:#5C5C5C;
+  color: #5c5c5c;
   font-size: 1.2rem;
 }
-
-
-
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
   margin-top: 20px;
-  
 }
-header nav{
- /* text-align: center; */
- display: inline;
- float:right;
- margin-right: 100px;
-}
-header>nav ul, li{
+header nav {
+  /* text-align: center; */
   display: inline;
- 
+  float: right;
+  margin-right: 100px;
 }
-header a{
+header > nav ul,
+li {
+  display: inline;
+}
+header a {
   color: rgba(30, 170, 200, 1);
 }
-header a:hover{
+header a:hover {
   text-decoration: underline rgba(30, 170, 200, 1);
 }
 
-header img{
+header img {
+  height: auto;
   display: inline;
-  margin:0px 50px ;
-  width:56px;
+  margin: 0px 50px;
+  width: 56px;
 }
 
-h3{
+h3 {
   font-size: 2.5rem;
   text-decoration: underline;
 }
-.contact{
+.contact {
   margin-top: 200px;
 }
-.contact p{
+.contact p {
   font-size: 1.1rem;
 }
 
-.summary{
+.summary {
   display: flex;
   justify-content: center;
- 
 }
-.myPicture{
+.myPicture {
   display: flex;
-  margin:0px 50px 0px 250px;
-  
+  margin: 0px 50px 0px 250px;
 }
-.myPicture>img{
+.myPicture > img {
   width: 400px;
   border-radius: 0px 0px 100px 20px;
 }
-.summaryText{
+.summaryText {
   margin-top: 100px;
-  
 }
-.summaryText>p{
+.summaryText > p {
   font-size: 1.2rem;
   line-height: 26px;
   margin-bottom: 20px;
-  padding:20px 300px 20px 0px;
+  padding: 20px 300px 20px 0px;
 }
-.summaryText a{
+.summaryText a {
   padding: 15px 50px;
   color: white;
   background: rgba(30, 170, 200, 1);
   border-radius: 5px;
 }
-.summaryText>a+a{
+.summaryText > a + a {
   border: solid 1px rgba(30, 170, 200, 1);
   color: rgba(30, 170, 200, 1);
   background: palegoldenrod;
-  
 }
-.summaryText ul{
+.summaryText ul {
   margin-top: 50px;
   padding: 0px;
 }
-.summaryText>ul a{
+.summaryText > ul a {
   display: block;
   width: 40%;
   color: grey;
-  background:whitesmoke;
-  border-left: solid 5px rgba(30, 170, 200, 0.5) ;
+  background: whitesmoke;
+  border-left: solid 5px rgba(30, 170, 200, 0.5);
   box-shadow: rgba(30, 170, 200, 0.2) 0px 2px;
 }
-.summaryText>h2{
-  font-size: 4rem;
+.summaryText > h2 {
+  font-size: 5rem;
   margin: -120px 0px 0px -45px;
   color: rgba(30, 170, 200, 0.3);
 }
-.skills{
+.skills {
   margin-bottom: 50px;
 }
-.first{
+.first {
   margin-bottom: 20px;
 }
-.skills p{
+.skills p {
   display: inline;
   margin: 0px 10px 0px 0px;
 }
-.skills .fas{
+.skills .fas {
   color: rgba(30, 170, 200, 0.5);
 }
 
-
-.showcase-comment{
-  width:100%;
+.showcase-comment {
+  width: 100%;
   margin: 50px 50px 20px 50px;
 }
 
-.codeShowcase>h2,.designShowcase>h2{
+.codeShowcase > h2,
+.designShowcase > h2 {
   margin: 100px 0px 10px 50px;
 }
-.codeShowcaser, .designShowcaser{
-  margin:20px 50px 100px 50px;
-  display: flex;
-  flex-flow: row nowrap;
+.codeShowcaser,
+.designShowcaser {
+  margin: 20px 50px 100px 50px;
+  display: grid;
+  flex-flow: row wrap;
 }
 
-.showcaseChild{
+.showcaseChild {
   width: 33.3333%;
   height: 350px;
-  
 }
-.showcaseChild>p{
+.showcaseChild > p {
   font-size: 1.2rem;
   margin: 20px 0px;
-  padding:0px 100px 0px 0px;
+  padding: 0px 100px 0px 0px;
   /* display: inline; */
 }
 
-.showcaseChild img{
+.showcaseChild img {
   width: 350px;
   border-radius: 15px;
   border: 1px solid rgba(30, 170, 200, 0.5);
 }
-.extraLink{
+.extraLink {
   padding-left: 50px;
 }
-.extraLink>p{
+.extraLink > p {
   display: inline;
 }
-.fab{
+.fab {
   margin-right: 10px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.alert-plug{
-    color: orange;
-    font-style: italic;
-    font-size: 1.0rem;
-}
-
-.contact{
+.contact {
   text-align: center;
   margin-bottom: 100px;
 }
 
 footer {
- text-align: center;
- margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-@media (min-width:600px) and ( max-width: 1024px){
-  .myPicture{
+@media (min-width: 600px) and (max-width: 1024px) {
+  .myPicture {
     margin-left: 0px;
   }
-  .summaryText>h2 {
-    font-size: 2rem;
+  .summaryText > h2 {
+    font-size: 3rem;
     margin: -67px 0px 0px -45px;
   }
-  .summaryText>p{
+  .summaryText > p {
     padding: 20px 40px 20px 0px;
-font-size: 1rem;
+    font-size: 1rem;
   }
-  h1{
+  h1 {
     font-size: 0.8rem;
   }
-  .summaryText a{
+  .summaryText a {
     display: block;
     width: 70%;
-    margin-bottom:20px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .codeShowcaser, .designShowcaser{
+  .codeShowcaser,
+  .designShowcaser {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
   }
-  .showcaseChild{
+  .showcaseChild {
     width: 100%;
   }
-  .showcaseChild img{
-    width:250px;
+  .showcaseChild img {
+    width: 250px;
     display: flex;
   }
-  .showcaseChild p{
+  .showcaseChild p {
     font-size: 1.5rem;
     padding-right: 0px;
-    
   }
 }
 
-
-@media screen and (max-width: 600px){
-  html{
+@media screen and (max-width: 600px) {
+  html {
     font-size: 12px;
   }
 
   /* li{
     text-align: center;
   } */
-  header nav{
+  header nav {
     text-align: center;
     float: none;
     margin: auto;
@@ -278,62 +267,62 @@ font-size: 1rem;
     padding-top: 20px;
   }
 
-  header>nav ul{
+  header > nav ul {
     text-align: center;
   }
- 
-  header>nav a{
+
+  header > nav a {
     font-size: 2rem;
   }
-  header img{
+  header img {
     display: block;
-    margin:auto;
+    margin: auto;
   }
-  .myPicture{
+  .myPicture {
     display: none;
   }
-  h1{
-    font-size:1rem;
+  h1 {
+    font-size: 1.5rem;
     padding-left: 50px;
   }
-  .summaryText>h2{
-    font-size: 2rem;
-    margin: -44px 0px 0px 40px; 
+  .summaryText > h2 {
+    font-size: 3.5rem;
+    margin: -60px 0px 0px 40px;
   }
-  .summaryText>p{
+  .summaryText > p {
     font-size: 1.5rem;
-    padding:20px 50px 50px 50px;
+    padding: 20px 50px 50px 50px;
   }
-  .summaryText a{
+  .summaryText a {
     margin-left: 50px;
     display: block;
     width: 80%;
     margin-bottom: 10px;
   }
-  .skills{
+  .skills {
     font-size: 1.1rem;
     padding-left: 50px;
   }
- .summaryText>ul a{
-   display: none;
- }
- .codeShowcaser, .designShowcaser{
-   justify-content: center;
-   flex-flow: column nowrap;
- }
- .showcaseChild{
-   width: 100%;
- }
- .showcaseChild img{
-   width:250px;
- }
- .showcaseChild p{
-   font-size: 1.4rem;
-   padding-right: 0px;
-   
- }
+  .summaryText > ul a {
+    display: none;
+  }
+  .codeShowcaser,
+  .designShowcaser {
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+  .showcaseChild {
+    width: 100%;
+  }
+  .showcaseChild img {
+    width: 250px;
+  }
+  .showcaseChild p {
+    font-size: 1.4rem;
+    padding-right: 0px;
+  }
 
- .contact p{
-   font-size: 2rem;
- }
+  .contact p {
+    font-size: 2rem;
+  }
 }
